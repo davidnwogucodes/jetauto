@@ -1,0 +1,77 @@
+.navcontainer {
+  height: 100vh;
+  background-color: #63657a;
+  display: flex;
+  width: 60px;
+  margin-left: 3px;
+  margin-top: 4px;
+  margin-bottom: -79px;
+  border-radius: 18px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .icon {
+    display: flex;
+    height: 45px;
+    width: 30px;
+    background-color: transparent;
+    margin: 3px;
+    align-content: center;
+    align-items: center;
+    transition: 1s;
+
+    &.home {
+      margin-top: 105px;
+      &.home:hover {
+        &.home:before {
+          content: "home";
+          margin-left: 50px;
+        }
+      }
+    }
+    &.page {
+      &.page:hover {
+        &.page:before {
+          content: "page";
+          margin-left: 50px;
+        }
+      }
+    }
+    // &.gallery {
+    //   &.gallery:hover {
+    //     &.gallery:before {
+    //       content: "gallery";
+    //       margin-left: 50px;
+    //     }
+    //   }
+    // }
+    &.desk {
+      &.desk:hover {
+        &.desk:before {
+          content: "desk";
+          margin-left: 50px;
+        }
+      }
+    }
+
+    &.location {
+      &.location:hover {
+        &.location:before {
+          content: "location";
+          margin-left: 50px;
+        }
+      }
+    }
+    &.settings {
+      margin: 53px;
+      &.settings:hover {
+        &.settings:before {
+          content: "settings";
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}
